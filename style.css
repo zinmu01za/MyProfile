@@ -11,14 +11,11 @@ body{
     height: 100vh;
 }
 
-.container{
+.container1{
     background-color: #0c1214;
     color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
