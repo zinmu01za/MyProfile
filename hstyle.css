@@ -11,26 +11,26 @@ body{
     height: 100vh;
 }
 
-.container1{
-    background-color: #0c1214;
-    color: rgb(255, 255, 255);
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
-.loading-page{
+.loading-page {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #06090a, #0c1214, #121516 );
+    background: linear-gradient(to right, #06090a, #0c1214, #121516);
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Changed to column */
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
+}
+
+.svg-container {
+    display: flex;
+    flex-direction: row; /* This keeps the SVGs in a row */
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #svg {
@@ -43,19 +43,12 @@ body{
     animation: draw 8s ease;
 }
 
-@keyframes draw{
-   0%{
-    stroke-dashoffset: 4500;
-   }
-   100%{
-    stroke-dashoffset: 0;
-
-   }
-}
-
 .name-container{
     height: 30px;
     overflow: hidden;
+    margin-top: 1rem; /* Adjust this value for desired spacing */
+    text-align: center;
+   
 }
 
 .logo-name{
@@ -64,4 +57,22 @@ body{
     letter-spacing: 12px;
     text-transform: uppercase;
     margin-left: 20px;
+}
+
+@keyframes draw{
+    0%{
+     stroke-dashoffset: 4500;
+    }
+    100%{
+     stroke-dashoffset: 0;
+ 
+    }
+ }
+
+ .container1{
+    background-color: #0c1214;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    position: relative;
 }

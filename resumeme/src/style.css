@@ -65,3 +65,39 @@ body{
     text-transform: uppercase;
     margin-left: 20px;
 }
+
+nav {
+    background-color: #333; /* สีพื้นหลังของ Navbar */
+    padding: 10px;
+    width: 100%; /* ขยายให้เต็มความกว้าง */
+    position: fixed; /* ทำให้ Navbar อยู่ติดด้านบน */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* ทำให้ Navbar อยู่ด้านหน้าองค์ประกอบอื่น */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* จัดการให้เมนูแสดงในแนวนอน */
+    
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6600;
+  }
+  
+  .liname{
+    margin-left: 0px;
+  }
