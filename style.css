@@ -12,7 +12,7 @@ body{
 }
 
 .container1{
-    background-color: #0c1214;
+    background-color: #f0eaea;
     color: rgb(255, 255, 255);
     height: 100%;
     width: 100%;
@@ -20,7 +20,7 @@ body{
 }
 
 .loading-page{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: linear-gradient(to right, #06090a, #0c1214, #121516 );
@@ -31,7 +31,9 @@ body{
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
+    z-index: 9999;
 }
+
 
 #svg {
     height: 150px;
@@ -59,9 +61,123 @@ body{
 }
 
 .logo-name{
-    color: #fff;
+    color: #cec7c7;
     font-size: 20px;
     letter-spacing: 12px;
     text-transform: uppercase;
     margin-left: 20px;
+}
+
+.nav-item{
+    margin-right: 20px;
+    width: 150px;
+    display: flex; /* Flexbox to align content */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    
+}
+
+.nav-link:hover{
+    background-color: #FF7E05;
+    color: rgb(255, 255, 255) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link1:hover{
+    background-color: #FF7E05;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.nav-link {
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+.nav-link1 {
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+    padding: 10px; 
+    border-radius: 20px;
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+
+
+
+.nav-item1{
+    margin-right: 40px;
+    background-color: #FF7E05;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.bd1{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.bd2{
+    background-color: rgb(126, 117, 117);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.bd3{
+    background-color: rgb(67, 148, 144);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+.text1{
+    background-color: #FF7E05;
+    width: 50%;
+    height: 50%;
+    margin-left: 120px;
+    
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navcon {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adjust this for more shadow */
+    transition: box-shadow 2.5s ease;
+    background-color: #ffffff;
+  }
+
+  .navcon.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+}
+
+
+.navbar-brand {
+    margin-left: 20px; /* Adjust as necessary */
 }
